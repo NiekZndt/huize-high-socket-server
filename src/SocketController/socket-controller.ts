@@ -13,7 +13,8 @@ export class SocketController {
 
     constructor() {
         this.openServer();
-        this.broadcastData();
+        // this.broadcastData();
+        setInterval(this.intervalMessage, 5000);
     }
 
     private openServer(): void
@@ -37,5 +38,12 @@ export class SocketController {
             )
             this.broadcastData();
         })
+    }
+
+    private intervalMessage = () => {
+        this.clients.forEach(client =>
+            client.readyState === WebSocket.OPEN && client.send(this.data)
+        )
+        this.data++;
     }
 }

@@ -1,7 +1,5 @@
 import {SocketController} from "./SocketController/socket-controller";
 import {MysqlController} from "./MySql/mysql-controller";
 
-// new SocketController();
+new SocketController();
 // new MysqlController();
-
-console.log('Hello World'); // Random comment
