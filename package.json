@@ -1,0 +1,27 @@
+{
+  "name": "huize-high-socket-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Niek Zandt",
+  "license": "ISC",
+  "compilerOptions": {
+    "esModuleInterop": true
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.18"
+  },
+  "dependencies": {
+    "eslint": "^8.23.1",
+    "mysql": "^2.18.1",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.3",
+    "ws": "^8.8.1"
+  }
+}
